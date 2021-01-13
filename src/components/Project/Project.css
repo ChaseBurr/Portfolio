@@ -1,0 +1,18 @@
+.project {
+  width: 800px;
+  height: 450px;
+  position: relative;
+  overflow: hidden;
+  margin: 5px;
+  box-shadow: 0px 0px 5px black;
+}
+
+.project img {
+  width: 100%;
+}
+
+.project-title {
+}
+
+.project-title {
+}

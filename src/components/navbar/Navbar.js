@@ -7,14 +7,17 @@ const Navbar = () => {
     <>
       <nav>
         <Link to="/" className="nav-logo">
-          <i className="fas fa-user-alt"></i>
+          Chase Burr
         </Link>
         <ul className="nav-items">
-          <Link to="/" className="nav-item">
-            Home
+          <Link to="/projects" className="nav-item">
+            Projects
           </Link>
           <Link to="/" className="nav-item">
-            About
+            Resume
+          </Link>
+          <Link to="/" className="nav-item">
+            Contact
           </Link>
           <Link to="/idea1" className="nav-item">
             Idea1

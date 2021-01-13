@@ -1,8 +1,40 @@
-@import url("https://fonts.googleapis.com/css2?family=Andika+New+Basic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+
+:root {
+  --primary-color: #2ecc71;
+  --secondary-color: #2c3e50;
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Andika New Basic", sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.wrapper {
+  position: relative;
+  margin: 50px 0 45px;
+}
+
+.recent-projects {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 40%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.section-header {
+  text-align: center;
+  font-size: 2.1rem;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
