@@ -15,6 +15,10 @@
   border-radius: 50%;
 }
 
+.profile-picture img {
+  border: 4px solid var(--primary-color);
+}
+
 .about-container {
   display: flex;
   flex-direction: column;

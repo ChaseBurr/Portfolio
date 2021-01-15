@@ -10,17 +10,20 @@ const Navbar = () => {
           Chase Burr
         </Link>
         <ul className="nav-items">
+          <Link to="/" className="nav-item">
+            Home
+          </Link>
           <Link to="/projects" className="nav-item">
             Projects
           </Link>
-          <Link to="/" className="nav-item">
+          <Link to="/resume" className="nav-item">
             Resume
           </Link>
-          <Link to="/" className="nav-item">
+          <Link to="/photography" className="nav-item">
             Contact
           </Link>
-          <Link to="/idea1" className="nav-item">
-            Idea1
+          <Link to="/photography" className="nav-item">
+            Photography
           </Link>
         </ul>
       </nav>

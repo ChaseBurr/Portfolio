@@ -2,7 +2,7 @@
 
 :root {
   --primary-color: #2ecc71;
-  --secondary-color: #2c3e50;
+  --secondary-color: #16a085;
 }
 
 * {
@@ -37,4 +37,39 @@
   margin-bottom: 10px;
   letter-spacing: 2px;
   text-transform: uppercase;
+}
+
+.overlay {
+  background-color: black;
+  opacity: 0.7;
+}
+
+/* Project page */
+
+.project-page {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem;
+  justify-content: center;
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  background-color: #2c3e50;
+  display: flex;
+  align-items: center;
+  padding: 4rem;
+}
+
+.social {
+  width: 300px;
+}
+
+.social i {
+  font-size: 3rem;
+}
+
+.social a {
+  color: white;
 }
