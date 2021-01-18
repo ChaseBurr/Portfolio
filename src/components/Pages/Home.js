@@ -8,7 +8,7 @@ function Home() {
     <>
       <Hero />
       <div className="container">
-        <h1 className="section-header">Current Projects</h1>
+        <h1 className="section-header">Projects in development</h1>
         <ul className="recent-projects">
           <Project
             imgSrc="/images/Entertainment-App.png"
