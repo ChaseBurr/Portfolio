@@ -1,10 +1,6 @@
 import axios from "axios";
 
-// const { API_KEY } = process.env;
-
-let API_KEY = "c52a1f0a294a2c11d901d69ed73d1290";
-
-// TODO put url and api_key in .env
+let API_KEY = process.env.REACT_APP_MOVIE_API_KEY;
 
 export const getData = (query, type) => {
   const url = `https://api.themoviedb.org/3/search/${type}/?api_key=${API_KEY}&query=${query}&language=en-US&page=1&include_adult=false`;
