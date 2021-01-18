@@ -19,11 +19,11 @@ function Home() {
             language="ReactJS"
           />
           <Project
-            imgSrc="/images/Athletic-shop.png"
-            imgAlt="Athletic Store"
-            projectName="Athletic Store"
-            projectDescription="An Athletic Store to browse items from an API built and hosted by me."
-            link="/projects/athletic-store"
+            imgSrc="/images/athletic-shop.png"
+            imgAlt="Athletic Shop"
+            projectName="Athletic Shop"
+            projectDescription="An Athletic Shop to browse items from an API built and hosted by me."
+            link="/projects/athletic-shop"
             language="ReactJS"
           />
         </ul>

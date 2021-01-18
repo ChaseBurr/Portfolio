@@ -5,7 +5,7 @@ function Projects() {
   return (
     <>
       <h1 className="section-header">Projects</h1>
-      <div className="project-page">
+      <div className="projects-page">
         <Project
           imgSrc="/images/Entertainment-App.png"
           imgAlt="Entertainment App"
@@ -19,7 +19,7 @@ function Projects() {
           imgAlt="Athletic Store"
           projectName="Athletic Store"
           projectDescription="An Athletic Store to browse items from an API built and hosted by me."
-          link="/projects/athletic-store"
+          link="/projects/athletic-shop"
           language="ReactJS"
         />
         <Project
