@@ -18,7 +18,6 @@ function Home() {
 
   const getSearchData = (data) => {
     setMovieData(data);
-    console.log("new data: ", data);
   };
 
   return (

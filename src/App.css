@@ -90,3 +90,8 @@ footer {
 .project-page-image img {
   width: 800px;
 }
+
+.notfound {
+  margin: 0 auto;
+  margin-top: 300px;
+}
