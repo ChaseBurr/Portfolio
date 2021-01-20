@@ -9,28 +9,27 @@ import Projects from "./components/Pages/Projects";
 import ProjectPage from "./components/Pages/ProjectPage";
 import Resume from "./components/Pages/Resume";
 
-import path from "path";
-require("dotenv").config({
-  path: path.resolve(".env"),
-});
-
 console.log("eNv", process.env);
 
 function App() {
-  return (
-    <div className="App">
-      <Router>
-        <Navbar />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/projects" component={Projects} />
-          <Route exact path="/projects/:projectName" component={ProjectPage} />
-          <Route exact path="/resume" component={Resume} />
-          <Route exact path="/idea1" component={Idea1} />
-        </Switch>
-      </Router>
-    </div>
-  );
+   return (
+      <div className="App">
+         <Router>
+            <Navbar />
+            <Switch>
+               <Route exact path="/" component={Home} />
+               <Route exact path="/projects" component={Projects} />
+               <Route
+                  exact
+                  path="/projects/:projectName"
+                  component={ProjectPage}
+               />
+               <Route exact path="/resume" component={Resume} />
+               <Route exact path="/idea1" component={Idea1} />
+            </Switch>
+         </Router>
+      </div>
+   );
 }
 
 export default App;
