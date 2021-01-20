@@ -8,12 +8,15 @@ function Hero() {
         <img src="/images/avatar.jpg" alt="chase burr" />
       </div>
       <div className="about-container">
-        <h1>Hi! I'm Chase Burr.</h1>
+        <h1>Hi! I'm Chase Burr</h1>
         <h2>Software Engineer</h2>
-        <h3>
-          I am a recent Computer Science graduate from Weber State University
-          looking to get my feet wet in the Software Engineering world
-        </h3>
+        <p>
+          Computer Science graduate seeking to improve my skills as a software
+          engineer. Strong foundation in Object Oriented programming and
+          troubleshooting. Quick learner and ability to adapt to new languages.
+          I may not have much experience job wise, but I will dedicate a lot of
+          time learning and adapting to new environments.
+        </p>
       </div>
     </div>
   );
