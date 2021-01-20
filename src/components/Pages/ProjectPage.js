@@ -1,6 +1,6 @@
 import React from "react";
 
-function ProjectPage({ match }) {
+function ProjectPage() {
    return <div className="project-page"></div>;
 }
 
