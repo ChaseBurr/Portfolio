@@ -16,7 +16,7 @@ function Home() {
                      imgAlt="Entertainment App"
                      projectName="Entertainment App"
                      projectDescription="Users can search for any Movie/TV Show and they will get a list of shows to watch related to their search."
-                     link="/projects/entertainment-app"
+                     link="https://chaseburr.github.io/Entertainment-App/#/"
                      language="ReactJS"
                   />
                   <Project
@@ -24,7 +24,7 @@ function Home() {
                      imgAlt="Athletic Shop"
                      projectName="Athletic Shop"
                      projectDescription="An Athletic Shop to browse items from an API built and hosted by me."
-                     link="/projects/athletic-shop"
+                     link="https://chaseburr.github.io/Athletic-Shop/"
                      language="ReactJS"
                   />
                </ul>
