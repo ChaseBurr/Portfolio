@@ -30,6 +30,14 @@ function Projects() {
                link="/projects/"
                language="C# / JavaScript"
             />
+            <Project
+               imgSrc="/images/giphy.png"
+               imgAlt="Giphy"
+               projectName="Giphy Project"
+               projectDescription="This project uses the GIPHY API to grab gifs."
+               link="https://chaseburr.github.io/giphy-search/"
+               language="JavaScript"
+            />
          </div>
       </>
    );
