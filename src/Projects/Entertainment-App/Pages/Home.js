@@ -3,8 +3,6 @@ import { getPopular } from "./../components/FetchData";
 import DisplayMovieData from ".././components/DisplayMovieData";
 import Navbar from "./../components/Navbar";
 
-require("dotenv").config({ path: "/../" });
-
 function Home() {
   const [movieData, setMovieData] = useState([]);
   useEffect(() => {

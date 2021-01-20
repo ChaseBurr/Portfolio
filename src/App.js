@@ -2,11 +2,19 @@ import "./App.css";
 import Navbar from "./components/navbar/Navbar";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
+// Pages
 import Home from "./components/Pages/Home";
 import Idea1 from "./components/Pages/Idea1";
 import Projects from "./components/Pages/Projects";
 import ProjectPage from "./components/Pages/ProjectPage";
 import Resume from "./components/Pages/Resume";
+
+import path from "path";
+require("dotenv").config({
+  path: path.resolve(".env"),
+});
+
+console.log("eNv", process.env);
 
 function App() {
   return (
