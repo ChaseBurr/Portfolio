@@ -7,6 +7,14 @@ function Projects() {
          <h1 className="section-header">Projects</h1>
          <div className="projects-page">
             <Project
+               imgSrc="/images/Netflix-Clone.png"
+               imgAlt="Netflix Clone"
+               projectName="Netflix Clone"
+               projectDescription="A clone of Netflix build with ReactJS"
+               link="https://chaseburr.github.io/Netflix-Clone/#/"
+               language="ReactJS"
+            />
+            <Project
                imgSrc="/images/Entertainment-App.png"
                imgAlt="Entertainment App"
                projectName="Entertainment App"

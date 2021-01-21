@@ -12,11 +12,11 @@ function Home() {
                <h1 className="section-header">Projects in development</h1>
                <ul className="recent-projects">
                   <Project
-                     imgSrc="/images/Entertainment-App.png"
-                     imgAlt="Entertainment App"
-                     projectName="Entertainment App"
-                     projectDescription="Users can search for any Movie/TV Show and they will get a list of shows to watch related to their search."
-                     link="https://chaseburr.github.io/Entertainment-App/#/"
+                     imgSrc="/images/Netflix-Clone.png"
+                     imgAlt="Netflix Clone"
+                     projectName="Netflix Clone"
+                     projectDescription="A clone of Netflix build with ReactJS"
+                     link="https://chaseburr.github.io/Netflix-Clone/#/"
                      language="ReactJS"
                   />
                   <Project
