@@ -27,7 +27,7 @@ function Projects() {
                imgAlt="Athletic Store"
                projectName="Athletic Store"
                projectDescription="An Athletic Store to browse items from an API built and hosted by me."
-               link="http://www.chaseburr.com/projects/athletic-shop"
+               link="https://chaseburr.github.io/Athletic-Shop/#/"
                language="ReactJS"
             />
             <Project
