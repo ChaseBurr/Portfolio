@@ -3,6 +3,7 @@
 :root {
    --primary-color: #2ecc71;
    --secondary-color: #16a085;
+   --hero-background: #2d3436;
 }
 
 * {
