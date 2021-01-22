@@ -14,9 +14,11 @@ export default () => {
                   Hello, I'm <span>Chase Burr</span>
                </h1>
                <h3>I'm a Software Engineer</h3>
-               <button className="btn btn-primary">
-                  View My Work <i className="fas fa-arrow-down"></i>
-               </button>
+               <a href="#portfolio">
+                  <button className="btn btn-primary">
+                     View My Work <i className="fas fa-arrow-down"></i>
+                  </button>
+               </a>
             </div>
             <div className="particles">
                <Particles />
