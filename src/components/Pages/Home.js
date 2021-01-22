@@ -1,26 +1,43 @@
 import React from "react";
-import Hero from "./../hero/Hero";
 import Project from "./../Project/Project";
-import Footer from "./../Footer";
 
 function Home() {
    return (
       <>
-         {/* <Hero /> */}
-         <div className="about-container">
-            <div className="about-content">
-               <h2>Software Engineer</h2>
-               <p>
-                  Computer Science graduate from Weber State University seeking
-                  to improve my skills as a software engineer. Strong foundation
-                  in Object Oriented programming and troubleshooting. Quick
-                  learner and ability to adapt to new languages. I may not have
-                  much experience job wise, but I will dedicate a lot of time
-                  learning and adapting to new environments.
-               </p>
-            </div>
-         </div>
          <div className="container">
+            <div className="about-container">
+               <div className="about-content">
+                  <h1>CHASE BURR</h1>
+                  <hr />
+                  <h2>Software Engineer</h2>
+                  <p>
+                     Computer Science graduate from Weber State University
+                     seeking to improve my skills as a software engineer. Strong
+                     foundation in Object Oriented programming and
+                     troubleshooting. Quick learner and ability to adapt to new
+                     languages. I may not have much experience job wise, but I
+                     will dedicate a lot of time learning and adapting to new
+                     environments.
+                  </p>
+                  <hr />
+               </div>
+               <div className="social-icons">
+                  <a
+                     href="http://github.com/chaseburr"
+                     rel="noreferrer"
+                     target="_blank"
+                  >
+                     <img src="/images/github-icon-1.svg" alt="" />
+                  </a>
+                  <a
+                     href="http://linkedin.com/in/chaseburr"
+                     rel="noreferrer"
+                     target="_blank"
+                  >
+                     <img src="/images/linkedin-icon-2.svg" alt="" />
+                  </a>
+               </div>
+            </div>
             <div className="recent-project-section">
                <h1 className="section-header">Projects in development</h1>
                <ul className="recent-projects">
