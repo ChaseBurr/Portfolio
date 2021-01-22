@@ -26,12 +26,19 @@
       src="https://www.googletagmanager.com/gtag/js?id=UA-40892824-2"
    ></script>
    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-         dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+      window.onscroll = function () {
+         stickyNavbar();
+      };
 
-      gtag("config", "UA-40892824-2");
+      var navbar = document.querySelector(".navbar");
+      var sticky = navbar.offsetTop;
+
+      function stickyNavbar() {
+         if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky");
+         } else {
+            navbar.classList.remove("sticky");
+         }
+      }
    </script>
 </html>
