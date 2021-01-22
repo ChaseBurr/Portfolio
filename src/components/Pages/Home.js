@@ -97,7 +97,7 @@ export default () => {
                />
                <Project
                   imgSrc="/images/gameoflife.png"
-                  link="https://github.ChaseBurr/CS3750AS2"
+                  link="https://github.com/ChaseBurr/CS3750AS3"
                   projectName="Conway's Game of Life"
                   projectDescription="Conway's game of life recreated in C# and JavaScript"
                   language="C# / JavaScript"
