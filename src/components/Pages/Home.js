@@ -69,35 +69,35 @@ export default () => {
             <div className="project-list">
                <Project
                   imgSrc="/images/Netflix-Clone.png"
-                  link="https://chaseburr.com/github.io/Netflix-Clone/"
+                  link="https://chaseburr.github.io/Netflix-Clone/"
                   projectName="Netflix Clone"
                   projectDescription="A Netflix clone made with ReactJS"
                   language="ReactJS"
                />
                <Project
                   imgSrc="/images/Entertainment-App.png"
-                  link="https://chaseburr.com/github.io/Entertainment-App/"
+                  link="https://chaseburr.github.io/Entertainment-App/"
                   projectName="Entertainment App"
                   projectDescription="A project that uses's themoviedb.org API"
                   language="ReactJS"
                />
                <Project
                   imgSrc="/images/Athletic-Shop.png"
-                  link="https://chaseburr.com/github.io/Athletic-Shop/"
+                  link="https://chaseburr.github.io/Athletic-Shop/"
                   projectName="Athletic Store"
                   projectDescription="An athletic store that is meant to demonstrate my ability of ReactJS"
                   language="ReactJS"
                />
                <Project
                   imgSrc="/images/giphy.png"
-                  link="https://chaseburr.com/github.io/Netflix-Clone/"
+                  link="https://chaseburr.github.io/Netflix-Clone/"
                   projectName="Netflix Clone"
                   projectDescription="A Netflix clone made with ReactJS"
                   language="ReactJS"
                />
                <Project
                   imgSrc="/images/gameoflife.png"
-                  link="https://github.com/ChaseBurr/CS3750AS2"
+                  link="https://github.ChaseBurr/CS3750AS2"
                   projectName="Conway's Game of Life"
                   projectDescription="Conway's game of life recreated in C# and JavaScript"
                   language="C# / JavaScript"
