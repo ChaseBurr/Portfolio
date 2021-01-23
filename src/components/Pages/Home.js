@@ -100,10 +100,10 @@ export default () => {
                />
                <Project
                   imgSrc="/images/giphy.png"
-                  link="https://chaseburr.github.io/Netflix-Clone/"
-                  projectName="Netflix Clone"
-                  projectDescription="A Netflix clone made with ReactJS"
-                  language="ReactJS"
+                  link="https://chaseburr.github.io/giphy-search/"
+                  projectName="Giphy"
+                  projectDescription="A simple Giphy project using Giphy's API"
+                  language="JavaScripts"
                />
                <Project
                   imgSrc="/images/gameoflife.png"
