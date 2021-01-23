@@ -117,6 +117,7 @@ body::-webkit-scrollbar {
    background-color: var(--navbar-background);
    border-bottom: 3px solid var(--secondary-color);
    position: absolute;
+   z-index: 500;
 }
 
 .navbar ul {
