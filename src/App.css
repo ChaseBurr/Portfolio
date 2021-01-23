@@ -18,6 +18,10 @@
    list-style: none;
 }
 
+html {
+   scroll-behavior: smooth;
+}
+
 body {
    background-color: var(--front-page-background);
    color: white;
