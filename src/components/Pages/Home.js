@@ -40,6 +40,14 @@ export default () => {
                      <a href="#contact">contact</a>
                   </li>
                </ul>
+               <div className="social-links">
+                  <a href="https://github.com/chaseburr" target="_blank">
+                     <i className="fab fa-github github"></i>
+                  </a>
+                  <a href="https://linkedin.com/in/chaseburr" target="_blank">
+                     <i className="fab fa-linkedin linkedin"></i>
+                  </a>
+               </div>
             </div>
          </div>
          <div className="about-section" id="about">
@@ -105,6 +113,15 @@ export default () => {
                   language="C# / JavaScript"
                />
             </div>
+         </div>
+         <div className="contact" id="contact">
+            <form action="" className="contact-form">
+               <h1>Contact Me</h1>
+               <input placeholder="Name" name="name" type="text" />
+               <input placeholder="Email" name="email" type="email" />
+               <input placeholder="Message" name="message" type="text" />
+               <button className="btn">Submit</button>
+            </form>
          </div>
       </>
    );
