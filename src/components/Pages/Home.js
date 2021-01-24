@@ -54,7 +54,20 @@ export default () => {
             <h1 className="section-header">ABOUT</h1>
             <hr />
             <div className="profile">
-               <img src="/images/avatar.jpg" alt="" />
+               {/* <img src="/images/avatar.jpg" alt="" /> */}
+               <div className="profile-description">
+                  <h3 align="center">Who's this guy?</h3>
+                  <p align="center">
+                     Engaged, creative Computer Science graduate from{" "}
+                     <b>Weber State University</b>
+                     seeking to improve skills as a software engineer. Strong
+                     foundation in Object Oriented programming and
+                     troubleshooting. Quick learner and ability to adapt to new
+                     languages. I may not have much experience job wise, but I
+                     will dedicate a lot of time learning and adapting to new
+                     environments.
+                  </p>
+               </div>
                <ul className="tools">
                   <Tool progress="95" width="450px" language="html" />
                   <Tool progress="80" width="400px" language="css" />
@@ -64,14 +77,6 @@ export default () => {
                   <Tool progress="85" width="425px" language="Python" />
                   <Tool progress="50" width="250px" language="Java" />
                </ul>
-            </div>
-            <div className="profile-description">
-               <h3 align="center">Who's this guy?</h3>
-               <p align="center">
-                  I'm a recent Computer Science graduate from{" "}
-                  <b>Weber State University</b> in Utah with a passion for
-                  programming.
-               </p>
             </div>
          </div>
          <div className="project-section" id="portfolio">
