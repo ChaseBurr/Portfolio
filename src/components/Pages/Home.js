@@ -97,7 +97,7 @@ export default () => {
                   language="ReactJS"
                />
                <Project
-                  imgSrc="/images/Athletic-shop.png"
+                  imgSrc="/images/Athletic-Shop.png"
                   link="https://chaseburr.github.io/Athletic-Shop/"
                   projectName="Athletic Store"
                   projectDescription="An athletic store that is meant to demonstrate my ability of ReactJS"
