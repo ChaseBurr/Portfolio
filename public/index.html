@@ -28,16 +28,46 @@
    <script>
       window.onscroll = function () {
          stickyNavbar();
+         activeNavbar();
       };
 
-      var navbar = document.querySelector(".navbar");
-      var sticky = navbar.offsetTop;
+      let navbar = document.querySelector(".navbar");
+      let offSet = navbar.offsetTop;
+      let home = document.querySelector(".home");
+      let about = document.querySelector(".about");
+      let portfolio = document.querySelector(".portfolio");
+      let contact = document.querySelector(".nav-contact");
 
       function stickyNavbar() {
-         if (window.pageYOffset >= sticky) {
+         if (window.pageYOffset >= offSet) {
             navbar.classList.add("sticky");
          } else {
             navbar.classList.remove("sticky");
+         }
+      }
+
+      function activeNavbar() {
+         if (window.pageYOffset >= offSet - 100) {
+            // Home tab active
+            home.classList.add("active");
+            about.classList.remove("active");
+         }
+         if (window.pageYOffset >= offSet) {
+            // About tab active
+            about.classList.add("active");
+            home.classList.remove("active");
+            portfolio.classList.remove("active");
+            contact.classList.remove("active");
+         }
+         if (window.pageYOffset >= offSet + 725) {
+            // portfolio tab active
+            portfolio.classList.add("active");
+            about.classList.remove("active");
+         }
+         if (window.pageYOffset >= offSet + 1900) {
+            // contact tab active
+            contact.classList.add("active");
+            portfolio.classList.remove("active");
          }
       }
    </script>

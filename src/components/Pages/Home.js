@@ -26,18 +26,24 @@ export default () => {
             <div className="navbar">
                <ul>
                   <li className="nav-item">
-                     <a href="#font-page" className="active">
+                     <a href="#font-page" className="home active">
                         home
                      </a>
                   </li>
                   <li className="nav-item">
-                     <a href="#about">about</a>
+                     <a className="about" href="#about">
+                        about
+                     </a>
                   </li>
                   <li className="nav-item">
-                     <a href="#portfolio">portfolio</a>
+                     <a className="portfolio" href="#portfolio">
+                        portfolio
+                     </a>
                   </li>
                   <li className="nav-item">
-                     <a href="#contact">contact</a>
+                     <a className="nav-contact" href="#contact">
+                        contact
+                     </a>
                   </li>
                </ul>
                <div className="social-links">
