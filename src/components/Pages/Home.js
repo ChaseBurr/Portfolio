@@ -96,6 +96,13 @@ export default () => {
                   language="ReactJS"
                />
                <Project
+                  imgSrc="/images/Hulu-Clone.png"
+                  link="https://chaseburr.github.io/Hulu-Clone/"
+                  projectName="Hulu Clone"
+                  projectDescription="A Hulu clone made with ReactJS"
+                  language="ReactJS"
+               />
+               <Project
                   imgSrc="/images/Entertainment-App.png"
                   link="https://chaseburr.github.io/Entertainment-App/"
                   projectName="Entertainment App"
