@@ -1,46 +1,48 @@
 .tool {
-   width: 500px;
-   height: 30px;
-   position: relative;
-   margin-bottom: 10px;
+  width: 500px;
+  height: 30px;
+  position: relative;
+  margin-bottom: 10px;
 }
 
 .tool .language {
-   background-color: var(--secondary-color);
-   width: 150px;
-   text-align: center;
-   padding: 3px;
-   z-index: 10;
-   position: absolute;
-   text-transform: uppercase;
+  background-color: #8854d0;
+  width: 150px;
+  text-align: center;
+  padding: 3px;
+  z-index: 10;
+  position: absolute;
+  text-transform: uppercase;
 }
 
 .progress-bar,
 .progress-bar-fill,
 .language {
-   width: 500px;
-   height: 100%;
+  width: 500px;
+  height: 100%;
 }
 
 .progress-bar {
-   position: absolute;
-   top: 0;
-   z-index: 5;
-   text-align: right;
-   background-color: #333;
+  position: absolute;
+  top: 0;
+  z-index: 5;
+  text-align: right;
+  background-color: #2d3436;
 }
 
 .progress-bar p {
-   position: relative;
-   top: 50%;
-   transform: translateY(-50%);
-   margin-right: 10px;
-   z-index: 100;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  margin-right: 10px;
+  z-index: 100;
 }
 
 .progress-bar-fill {
-   position: absolute;
-   z-index: 7;
-   width: 300px;
-   background-color: var(--progress-bar-color);
+  border-radius: 20px;
+  position: absolute;
+  z-index: 7;
+  width: 300px;
+  background-color: #a55eea;
 }
