@@ -3,11 +3,3 @@ node_modules
 .eslintcache
 procfile
 .DS_STORE
-
-
-<<<<<<< HEAD
-.DS_Store
-=======
-yarn.lock
-.DS_STORE
->>>>>>> 426413091d453db9c9ac8c2629dfadecb1cbd7c1
