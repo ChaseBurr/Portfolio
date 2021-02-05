@@ -3,8 +3,8 @@ import Project from "./../Project/Project";
 import Particles from "react-particles-js";
 import { TweenMax, TimelineLite, Power3 } from "gsap/all";
 import ScrollMagic from "scrollmagic";
-// require("debug.addIndicators");
-// global variables
+import Tool from "./../Tools/Tools";
+
 let controller;
 
 class Home extends Component {
