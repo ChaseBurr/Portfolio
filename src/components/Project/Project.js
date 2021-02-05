@@ -5,10 +5,7 @@ function Project(props) {
      return (
           <>
                <div className="project">
-                    <img
-                         src={`./../../src/images/${props.imgSrc}`}
-                         alt={props.imgAlt}
-                    />
+                    <img src={`./images/${props.imgSrc}`} alt={props.imgAlt} />
                     <a href={props.link} target="_blank" rel="noreferrer">
                          <div className="project-overlay">
                               <div className="overlay"></div>

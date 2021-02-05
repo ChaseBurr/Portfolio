@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Project from "./../Project/Project";
-import Tool from "./../Tools/Tools";
 import Particles from "react-particles-js";
 import { TweenMax, TimelineLite, Power3 } from "gsap/all";
 import ScrollMagic from "scrollmagic";
@@ -41,23 +40,67 @@ class Home extends Component {
                .from(viewMyWorkBtn, { x: -1300, ease: Power3.easeInOut }, 1.3)
                .from(this.navbar, { y: 100, ease: Power3.easeInOut }, 1.4);
 
-          console.log(aboutElement);
           // About Scene
-          new ScrollMagic.Scene({
-               triggerElement: aboutElement,
-               duration: "100%",
-               triggerHook: 0.5,
-          })
-               // .addIndicators({
-               //      colorStart: "white",
-               //      colorTrigger: "white",
-               //      name: "slide",
-               //      indent: 200,
-               // })
-               .setTween(aboutElement, {
-                    color: "red",
-               })
-               .addTo(controller);
+          // new ScrollMagic.Scene({
+          //      triggerElement: aboutElement,
+          //      duration: "100%",
+          //      triggerHook: 0.5,
+          // })
+          //      // .addIndicators({
+          //      //      colorStart: "white",
+          //      //      colorTrigger: "white",
+          //      //      name: "slide",
+          //      //      indent: 200,
+          //      // })
+          //      .setTween(aboutElement, {
+          //           color: "red",
+          //      })
+          //      .addTo(controller);
+
+          window.onscroll = function () {
+               stickyNavbar();
+               activeNavbar();
+          };
+
+          let navbar = document.querySelector(".navbar");
+          let offSet = navbar.offsetTop;
+          let home = document.querySelector(".home");
+          let about = document.querySelector(".about");
+          let portfolio = document.querySelector(".portfolio");
+          let contact = document.querySelector(".nav-contact");
+
+          function stickyNavbar() {
+               if (window.pageYOffset >= offSet) {
+                    navbar.classList.add("sticky");
+               } else {
+                    navbar.classList.remove("sticky");
+               }
+          }
+
+          function activeNavbar() {
+               if (window.pageYOffset >= offSet - 100) {
+                    // Home tab active
+                    home.classList.add("active");
+                    about.classList.remove("active");
+               }
+               if (window.pageYOffset >= offSet) {
+                    // About tab active
+                    about.classList.add("active");
+                    home.classList.remove("active");
+                    portfolio.classList.remove("active");
+                    contact.classList.remove("active");
+               }
+               if (window.pageYOffset >= offSet + 725) {
+                    // portfolio tab active
+                    portfolio.classList.add("active");
+                    about.classList.remove("active");
+               }
+               if (window.pageYOffset >= offSet + 1900) {
+                    // contact tab active
+                    contact.classList.add("active");
+                    portfolio.classList.remove("active");
+               }
+          }
      }
 
      render() {
