@@ -16,12 +16,13 @@
           "scrollmagic": "^2.0.8"
      },
      "scripts": {
-          "start": "react-scripts start",
-          "build": "react-scripts build",
-          "test": "react-scripts test",
-          "eject": "react-scripts eject",
+          "prod": "yarn clean && webpack",
+          "prodStart": "webpack serve",
+          "dev": "yarn clean && webpack --config webpack.dev.js --mode=development && webpack serve",
+          "webpack-dev": "webpack-dev-server",
+          "clean": "rimraf ./build/*",
           "deploy": "gh-pages -d build",
-          "predeploy": "npm run build"
+          "predeploy": "npm run prod"
      },
      "eslintConfig": {
           "extends": [
@@ -40,5 +41,18 @@
                "last 1 firefox version",
                "last 1 safari version"
           ]
+     },
+     "devDependencies": {
+          "@babel/core": "^7.12.13",
+          "@babel/preset-env": "^7.12.13",
+          "@babel/preset-react": "^7.12.13",
+          "babel-loader": "^8.2.2",
+          "file-loader": "^6.2.0",
+          "html-webpack-plugin": "^5.0.0",
+          "sass": "^1.32.6",
+          "sass-loader": "^10.1.1",
+          "webpack": "^5.20.2",
+          "webpack-cli": "^4.5.0",
+          "webpack-dev-server": "^3.11.2"
      }
 }

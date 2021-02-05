@@ -2,50 +2,20 @@ $primary-color: #2d3436
 $language-color: #8854d0
 $progress-bar-color: #a55eea
     
-.tool 
+.tools
+    display: flex
     width: 500px
-    height: 30px
-    position: relative
-    margin-bottom: 10px
 
+    h1
+        border-bottom: 2px solid $progress-bar-color
 
-    .language 
-        background-color: $language-color
-        width: 150px
+    li
         text-align: center
-        padding: 3px
-        z-index: 10
-        position: absolute
-        text-transform: uppercase
+        background-color: $primary-color
+        margin-top: 5px
 
+    .languages
+        margin-right: 30px
 
-.progress-bar,
-.progress-bar-fill,
-.language 
-   width: 500px
-   height: 100%
-
-
-.progress-bar 
-    position: absolute
-    top: 0
-    z-index: 5
-    text-align: right
-    background-color: $primary-color
-
-
-    p
-        position: relative
-        top: 50%
-        transform: translateY(-50%)
-        margin-right: 10px
-        z-index: 100
-
-
-.progress-bar-fill 
-   border-radius: 20px
-   position: absolute
-   z-index: 7
-   width: 300px
-   background-color: $progress-bar-color
-
+        li
+            text-transform: uppercase

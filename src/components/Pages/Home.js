@@ -111,7 +111,8 @@ class Home extends Component {
                                    <li className="nav-item">
                                         <a
                                              className="nav-contact"
-                                             href="#contact"
+                                             href="https://linkedin.com/in/chaseburr"
+                                             target="_blank"
                                         >
                                              contact
                                         </a>
@@ -158,85 +159,68 @@ class Home extends Component {
                                         adapting to new environments.
                                    </p>
                               </div>
-                              <ul className="tools">
-                                   <Tool
-                                        progress="95"
-                                        width="450px"
-                                        language="html"
-                                   />
-                                   <Tool
-                                        progress="80"
-                                        width="400px"
-                                        language="css"
-                                   />
-                                   <Tool
-                                        progress="85"
-                                        width="425px"
-                                        language="javascript"
-                                   />
-                                   <Tool
-                                        progress="70"
-                                        width="350px"
-                                        language="C++"
-                                   />
-                                   <Tool
-                                        progress="70"
-                                        width="350px"
-                                        language="C#"
-                                   />
-                                   <Tool
-                                        progress="85"
-                                        width="425px"
-                                        language="Python"
-                                   />
-                                   <Tool
-                                        progress="50"
-                                        width="250px"
-                                        language="Java"
-                                   />
-                              </ul>
+                              <div className="tools">
+                                   <ul className="languages">
+                                        <h1>Languages</h1>
+                                        <li>HTML</li>
+                                        <li>css</li>
+                                        <li>javascript</li>
+                                        <li>python</li>
+                                        <li>C++</li>
+                                        <li>C#</li>
+                                        <li>Java</li>
+                                   </ul>
+                                   <ul className="frameworks-tools">
+                                        <h1>Frameworks & Tools</h1>
+                                        <li>ReactJS</li>
+                                        <li>Webpack</li>
+                                        <li>NodeJS</li>
+                                        <li>MongoDB</li>
+                                        <li>Heroku</li>
+                                   </ul>
+                              </div>
                          </div>
                     </div>
                     <div className="project-section" id="portfolio">
                          <h1 className="section-header">PROJECTS</h1>
                          <div className="project-list">
                               <Project
-                                   imgSrc="/images/Netflix-Clone.png"
+                                   imgSrc="Netflix-Clone.png"
                                    link="https://chaseburr.github.io/Netflix-Clone/"
                                    projectName="Netflix Clone"
                                    projectDescription="A Netflix clone made with ReactJS"
                                    language="ReactJS"
                               />
                               <Project
-                                   imgSrc="/images/Hulu-Clone.png"
+                                   imgSrc="Hulu-Clone.png"
                                    link="https://chaseburr.github.io/Hulu-Clone/"
                                    projectName="Hulu Clone"
                                    projectDescription="A Hulu clone made with ReactJS"
                                    language="ReactJS"
                               />
                               <Project
-                                   imgSrc="/images/Entertainment-App.png"
+                                   imgSrc="Entertainment-App.png"
                                    link="https://chaseburr.github.io/Entertainment-App/"
                                    projectName="Entertainment App"
                                    projectDescription="A project that uses's themoviedb.org API"
                                    language="ReactJS"
                               />
                               <Project
-                                   imgSrc="/images/Athletic-Shop.png"
+                                   imgSrc="Athletic-Shop.png"
                                    link="https://chaseburr.github.io/Athletic-Shop/"
                                    projectName="Athletic Store"
                                    projectDescription="An athletic store that is meant to demonstrate my ability of ReactJS"
                                    language="ReactJS"
                               />
                               <Project
-                                   imgSrc="/images/giphy.png"
+                                   imgSrc="giphy.png"
                                    link="https://chaseburr.github.io/giphy-search/"
                                    projectName="Giphy"
                                    projectDescription="A simple Giphy project using Giphy's API"
                                    language="JavaScripts"
                               />
                               <Project
-                                   imgSrc="/images/gameoflife.png"
+                                   imgSrc="gameoflife.png"
                                    link="https://github.com/ChaseBurr/CS3750AS3"
                                    projectName="Conway's Game of Life"
                                    projectDescription="Conway's game of life recreated in C# and JavaScript"
@@ -244,7 +228,7 @@ class Home extends Component {
                               />
                          </div>
                     </div>
-                    <div className="contact" id="contact">
+                    {/* <div className="contact" id="contact">
                          <form action="" className="contact-form">
                               <h1>Contact Me</h1>
                               <input
@@ -264,7 +248,7 @@ class Home extends Component {
                               />
                               <button className="btn">Submit</button>
                          </form>
-                    </div>
+                    </div> */}
                </div>
           );
      }
