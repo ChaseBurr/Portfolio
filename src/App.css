@@ -297,3 +297,18 @@ body::-webkit-scrollbar {
 }
 
 /* End of Contact Section */
+@media only screen and (max-width: 400px) {
+  body {
+    overflow-x: hidden;
+  }
+  .font-page-content {
+    width: 80%;
+    font-size: 2rem;
+  }
+  .font-page-content h1 {
+    font-size: 2rem;
+  }
+  .font-page-content .tools {
+    display: hidden;
+  }
+}

@@ -190,8 +190,8 @@ class Home extends Component {
                                    <h3 align="center">Who's this guy?</h3>
                                    <p align="center">
                                         Engaged, creative Computer Science
-                                        graduate from{" "}
-                                        <b>Weber State University</b>
+                                        graduate from
+                                        <b> Weber State University </b>
                                         seeking to improve skills as a software
                                         engineer. Strong foundation in Object
                                         Oriented programming and
@@ -203,23 +203,89 @@ class Home extends Component {
                                    </p>
                               </div>
                               <div className="tools">
+                                   <h1>Languages & Tools</h1>
                                    <ul className="languages">
-                                        <h1>Languages</h1>
-                                        <li>HTML</li>
-                                        <li>css</li>
-                                        <li>javascript</li>
-                                        <li>python</li>
-                                        <li>C++</li>
-                                        <li>C#</li>
-                                        <li>Java</li>
-                                   </ul>
-                                   <ul className="frameworks-tools">
-                                        <h1>Frameworks & Tools</h1>
-                                        <li>ReactJS</li>
-                                        <li>Webpack</li>
-                                        <li>NodeJS</li>
-                                        <li>MongoDB</li>
-                                        <li>Heroku</li>
+                                        <li>
+                                             <img
+                                                  src="https://icon-library.com/images/html5-icon-png/html5-icon-png-9.jpg"
+                                                  alt="HTML 5"
+                                                  className="icon-big"
+                                             />
+                                        </li>
+                                        <li>
+                                             <img
+                                                  src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/121-css3-512.png"
+                                                  alt="CSS 3"
+                                                  className="css"
+                                             />
+                                        </li>
+                                        <li>
+                                             <img
+                                                  src="https://cdn.worldvectorlogo.com/logos/sass-1.svg"
+                                                  alt="CSS 3"
+                                                  className="css"
+                                             />
+                                        </li>
+                                        <li>
+                                             <img
+                                                  src="https://cdn.worldvectorlogo.com/logos/logo-javascript.svg"
+                                                  alt="JavaScript"
+                                             />
+                                        </li>
+                                        <li>
+                                             <img
+                                                  src="https://cdn.worldvectorlogo.com/logos/python-5.svg"
+                                                  alt="Python"
+                                             />
+                                        </li>
+                                        <li>
+                                             <img
+                                                  src="https://cdn.worldvectorlogo.com/logos/c.svg"
+                                                  alt="C++"
+                                             />
+                                        </li>
+                                        <li>
+                                             <img
+                                                  src="https://cdn.worldvectorlogo.com/logos/c--4.svg"
+                                                  alt="C#"
+                                             />
+                                        </li>
+                                        <li>
+                                             <img
+                                                  src="https://cdn.worldvectorlogo.com/logos/java.svg"
+                                                  alt="Java"
+                                             />
+                                        </li>
+                                        <li>
+                                             <img
+                                                  src="https://www.excelsiortechnologies.com/img/about/node-js.png"
+                                                  alt="NodeJS"
+                                             />
+                                        </li>
+                                        <li>
+                                             <img
+                                                  src="https://cdn.worldvectorlogo.com/logos/react-2.svg"
+                                                  alt="ReactJS"
+                                             />
+                                        </li>
+                                        <li>
+                                             <img
+                                                  src="https://cdn.worldvectorlogo.com/logos/webpack-icon.svg"
+                                                  alt="Webpack"
+                                             />
+                                        </li>
+                                        <li>
+                                             <img
+                                                  src="https://lh3.googleusercontent.com/proxy/lMX-pmWVg2_TAwgkKhgqHEBlkWPPuDSvvBnAYwxQdhTkVEvMX12ELsNFbsXU-R1xAi1fJanFfyP3ksYSNFdjE9IwgC17usrDika9YCmCLfTTlBR4pByv6dPuCbwm8A"
+                                                  alt="MongoDB"
+                                             />
+                                        </li>
+                                        <li>
+                                             <img
+                                                  src="https://cdn.worldvectorlogo.com/logos/heroku.svg"
+                                                  alt="Heroku"
+                                             />
+                                        </li>
                                    </ul>
                               </div>
                          </div>
