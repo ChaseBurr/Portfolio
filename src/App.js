@@ -9,6 +9,7 @@ import "./images/gameoflife.png";
 import "./images/Entertainment-App.png";
 import "./images/Hulu-Clone.png";
 import "./images/Netflix-Clone.png";
+import "./images/Social-App.png";
 
 // Pages
 import Home from "./components/Pages/Home";

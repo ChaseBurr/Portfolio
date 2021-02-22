@@ -276,7 +276,7 @@ class Home extends Component {
                                         </li>
                                         <li>
                                              <img
-                                                  src="https://lh3.googleusercontent.com/proxy/lMX-pmWVg2_TAwgkKhgqHEBlkWPPuDSvvBnAYwxQdhTkVEvMX12ELsNFbsXU-R1xAi1fJanFfyP3ksYSNFdjE9IwgC17usrDika9YCmCLfTTlBR4pByv6dPuCbwm8A"
+                                                  src="https://www.pinclipart.com/picdir/big/336-3367489_mongodb-mongodb-nosql-logo-clipart.png"
                                                   alt="MongoDB"
                                              />
                                         </li>
@@ -293,6 +293,13 @@ class Home extends Component {
                     <div className="project-section" id="portfolio">
                          <h1 className="section-header">PROJECTS</h1>
                          <div className="project-list">
+                              <Project
+                                   imgSrc="Social-App.png"
+                                   link="https://chaseburr.github.io/Social-Media-App/"
+                                   projectName="Social App"
+                                   projectDescription="A fullstack Social Media App"
+                                   language="ReactJS + GraphQL"
+                              />
                               <Project
                                    imgSrc="Netflix-Clone.png"
                                    link="https://chaseburr.github.io/Netflix-Clone/"
