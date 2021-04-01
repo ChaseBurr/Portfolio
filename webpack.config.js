@@ -17,11 +17,20 @@ module.exports = {
                     },
                },
                {
-                    test: /\.s[ac]ss$/i,
+                    test: /\.s[a|c]ss$/i,
                     use: [
-                         "style-loader", // inject into DOM
-                         "css-loader", //Turns into commonjs
-                         "sass-loader", // turns sass into css
+                         { loader: "style-loader" },
+                         {
+                              loader: "css-loader",
+                              options: {
+                                   modules: {
+                                        localIdentName: "[local]",
+                                   },
+                              },
+                         },
+                         {
+                              loader: "sass-loader",
+                         },
                     ],
                },
                {
@@ -32,7 +41,7 @@ module.exports = {
                     ],
                },
                {
-                    test: /\.png$/,
+                    test: /\.(png|gif)$/i,
                     loader: "file-loader",
                     options: {
                          name: "[name].[ext]",

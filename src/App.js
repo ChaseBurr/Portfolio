@@ -1,6 +1,7 @@
-import "./App.css";
-import React from "react";
+import "./css/Global.scss";
+import React, { useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import axios from "axios";
 
 // Images
 import "./images/giphy.png";
@@ -15,14 +16,44 @@ import "./images/Social-App.png";
 import Home from "./components/Pages/Home";
 
 function App() {
+     const slack =
+          "https://hooks.slack.com/services/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";
+
+     useEffect(() => {
+          axios.post(
+               slack,
+               JSON.stringify({
+                    blocks: [
+                         {
+                              type: "divider",
+                         },
+                         {
+                              type: "section",
+                              fields: [
+                                   {
+                                        type: "mrkdwn",
+                                        text: "Portfolio Loaded",
+                                   },
+                                   {
+                                        type: "mrkdwn",
+                                        text: new Date().toUTCString(),
+                                   },
+                              ],
+                         },
+                         {
+                              type: "divider",
+                         },
+                    ],
+               })
+          );
+     }, []);
+
      return (
-          <div className="App">
-               <Router>
-                    <Switch>
-                         <Route exact path="/" component={Home} />
-                    </Switch>
-               </Router>
-          </div>
+          <Router>
+               <Switch>
+                    <Route exact path="/" component={Home} />
+               </Switch>
+          </Router>
      );
 }
 

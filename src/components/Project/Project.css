@@ -1,6 +1,6 @@
 .project {
      width: 800px;
-     height: 450px;
+     height: auto;
      position: relative;
      overflow: hidden;
      margin: 5px;
@@ -57,12 +57,21 @@
 
 .language-figure {
      bottom: 0;
+     left: 0;
      position: absolute;
      z-index: 10;
      background-color: #00cec9;
-     left: 0;
      padding: 5px 10px;
      border-radius: 10px 10px 0px 0px;
      color: white;
      margin-left: 30px;
+}
+
+@media (max-width: 375px) {
+     .language-figure {
+          padding: 2px 5px;
+          font-size: 0.7rem;
+          margin-left: 15px;
+          border-radius: 5px 5px 0px 0px;
+     }
 }

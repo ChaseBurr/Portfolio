@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+
+@mixin scrollbar() {
+     &::-webkit-scrollbar,
+     &::-webkit-scrollbar-thumb,
+     &::-webkit-scrollbar-track {
+          display: none;
+     }
+}
+
+* {
+     margin: 0;
+     padding: 0;
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+     font-family: "Noto Sans JP", sans-serif;
+     list-style: none;
+}
+
+html {
+     scroll-behavior: smooth;
+}
+
+a {
+     color: white;
+}
+
+body {
+     background-color: #0984e3;
+     color: white;
+     overflow-x: hidden;
+
+     @include scrollbar();
+}
+
+.section-header {
+     text-align: center;
+     font-size: 3rem;
+     letter-spacing: 2px;
+}
+/* About section */
+
+.tools {
+     margin-top: 45px;
+     margin-left: 100px;
+}
+
+/* End of About section */
+/* Project section */
+.project-section {
+     width: 100%;
+     padding: 3rem;
+     background-color: #2d3436;
+}
+
+.project-section h1 {
+     margin-bottom: 30px;
+}
+
+.project-list {
+     display: flex;
+     flex-wrap: wrap;
+     align-items: center;
+     justify-content: center;
+}
+
+.overlay {
+     background-color: black;
+     opacity: 0.7;
+}
+
+/* End of Project section */
+/* Contact Section */
+.contact {
+     width: 100%;
+     padding: 5rem;
+     position: relative;
+     background-color: #171715;
+}
+
+.contact-form {
+     width: 600px;
+     height: 600px;
+     margin: 0 auto;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     background-color: #2d3436;
+     border-radius: 20px;
+     box-shadow: 0px 0px 10px black;
+}
+
+.contact-form h1 {
+     margin-bottom: 30px;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+}
+
+.contact-form input {
+     width: 75%;
+     padding: 15px;
+     margin-bottom: 15px;
+     border: none;
+     border-radius: 10px;
+}
+
+.contact-form input:nth-child(4) {
+     height: 100px;
+}
+
+.contact-form input:focus {
+     outline: none;
+}
+
+/* job history */
+
+.job {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+
+.company-name {
+     text-transform: uppercase;
+     font-size: 1.5rem;
+}
+
+.timeline {
+     padding-left: 10px;
+}
+
+.job-description {
+     padding-left: 50px;
+}
+
+.job-description ul li {
+     list-style: circle;
+}
+
+.job-list {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+/* end of job history */
+
+/* End of Contact Section */
+@media only screen and (max-width: 400px) {
+     body {
+          overflow-x: hidden;
+     }
+     .font-page-content {
+          width: 80%;
+          font-size: 2rem;
+     }
+     .font-page-content h1 {
+          font-size: 2rem;
+     }
+     .font-page-content .tools {
+          display: hidden;
+     }
+}

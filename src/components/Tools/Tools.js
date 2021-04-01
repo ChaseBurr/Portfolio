@@ -1,17 +1,10 @@
 import React from "react";
-import "./Tools.css";
+import styles from "./../../css/Tools.module.scss";
 
 function Tools(props) {
      return (
-          <div className="tool">
-               {/* <div
-            className="progress-bar-fill"
-            style={{ width: props.width }}
-         ></div>
-         <div className="progress-bar">
-            <p>{`${props.progress}%`}</p>
-         </div> */}
-               <div className="language">{props.language}</div>
+          <div className={styles.tools}>
+               <div className={styles.language}>{props.language}</div>
           </div>
      );
 }

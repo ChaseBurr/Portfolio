@@ -1,0 +1,66 @@
+/* Navbar Styling */
+.navbar {
+     width: 100%;
+     bottom: 0;
+     left: 0;
+     background-color: #171715;
+     border-bottom: 3px solid #00cec9;
+     position: absolute;
+     z-index: 500;
+
+     ul {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+
+          li a {
+               color: white;
+               text-decoration: none;
+               text-transform: uppercase;
+               transition: 0.3s;
+               cursor: pointer;
+          }
+     }
+}
+
+.nav_item {
+     padding: 15px;
+}
+
+.sticky {
+     position: fixed;
+     height: 55px;
+     top: 0;
+     width: 100%;
+     z-index: 100;
+     -webkit-transition: all 0.3s ease;
+     transition: all 0.3s ease;
+}
+
+.active {
+     color: #00cec9 !important;
+}
+
+.social_links {
+     position: absolute;
+     z-index: 100;
+     top: 50%;
+     -webkit-transform: translateY(-50%);
+     transform: translateY(-50%);
+     right: 20px;
+
+     a {
+          color: white;
+
+          i {
+               font-size: 2.1rem;
+               margin-right: 20px;
+          }
+     }
+}
+
+@media (max-width: 375px) {
+     .navbar {
+          display: none;
+     }
+}
