@@ -74,7 +74,6 @@ class Home extends Component {
                     about.classList.add("active");
                     home.classList.remove("active");
                     portfolio.classList.remove("active");
-                    contact.classList.remove("active");
                }
                if (window.pageYOffset >= offSet + 725) {
                     // portfolio tab active
@@ -83,7 +82,6 @@ class Home extends Component {
                }
                if (window.pageYOffset >= offSet + 1900) {
                     // contact tab active
-                    contact.classList.add("active");
                     portfolio.classList.remove("active");
                }
           }

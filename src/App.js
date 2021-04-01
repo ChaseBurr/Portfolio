@@ -16,12 +16,9 @@ import "./images/Social-App.png";
 import Home from "./components/Pages/Home";
 
 function App() {
-     const slack =
-          "https://hooks.slack.com/services/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";
-
      useEffect(() => {
           axios.post(
-               slack,
+               process.env.REACT_APP_SLACK,
                JSON.stringify({
                     blocks: [
                          {
