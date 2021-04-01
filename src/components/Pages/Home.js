@@ -3,7 +3,6 @@ import Particles from "react-particles-js";
 import { TweenMax, TimelineLite, Power3 } from "gsap/all";
 import Projects from "../Projects";
 
-import Button from "./../buttons/Button";
 import Navbar from "../Navbar";
 
 import Section from "../Section";

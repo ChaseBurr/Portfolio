@@ -16,34 +16,34 @@ import "./images/Social-App.png";
 import Home from "./components/Pages/Home";
 
 function App() {
-     useEffect(() => {
-          axios.post(
-               process.env.REACT_APP_SLACK,
-               JSON.stringify({
-                    blocks: [
-                         {
-                              type: "divider",
-                         },
-                         {
-                              type: "section",
-                              fields: [
-                                   {
-                                        type: "mrkdwn",
-                                        text: "Portfolio Loaded",
-                                   },
-                                   {
-                                        type: "mrkdwn",
-                                        text: new Date().toUTCString(),
-                                   },
-                              ],
-                         },
-                         {
-                              type: "divider",
-                         },
-                    ],
-               })
-          );
-     }, []);
+     // useEffect(() => {
+     //      axios.post(
+     //           process.env.REACT_APP_SLACK,
+     //           JSON.stringify({
+     //                blocks: [
+     //                     {
+     //                          type: "divider",
+     //                     },
+     //                     {
+     //                          type: "section",
+     //                          fields: [
+     //                               {
+     //                                    type: "mrkdwn",
+     //                                    text: "Portfolio Loaded",
+     //                               },
+     //                               {
+     //                                    type: "mrkdwn",
+     //                                    text: new Date().toUTCString(),
+     //                               },
+     //                          ],
+     //                     },
+     //                     {
+     //                          type: "divider",
+     //                     },
+     //                ],
+     //           })
+     //      );
+     // }, []);
 
      return (
           <Router>
