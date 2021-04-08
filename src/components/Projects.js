@@ -7,7 +7,7 @@ export default function Projects() {
           <div className="project-list">
                <Project
                     imgSrc="Social-App.png"
-                    link="https://chaseburr.github.io/Social-Media-App/"
+                    link="https://social-app.chaseburr.com/"
                     projectName="Social App"
                     projectDescription="A fullstack Social Media App"
                     language="ReactJS + GraphQL"
