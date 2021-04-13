@@ -28,9 +28,9 @@ export default function Projects() {
                />
                <Project
                     imgSrc="Entertainment-App.png"
-                    link="https://chaseburr.github.io/Entertainment-App/"
+                    link="https://entertainment-app.vercel.app/"
                     projectName="Entertainment App"
-                    projectDescription="A project that uses's themoviedb.org API"
+                    projectDescription="A project that uses TheMovieDB.org's API"
                     language="ReactJS"
                />
                <Project
