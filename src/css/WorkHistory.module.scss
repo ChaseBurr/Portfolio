@@ -1,0 +1,48 @@
+.workHistory {
+     padding: 20px;
+     box-shadow: 0px 0px 15px black;
+}
+
+.workCard {
+     width: 700px;
+     background-color: #2d3436;
+     min-height: 140px;
+     position: relative;
+     margin: 10px;
+     padding: 10px;
+     box-shadow: 0px 0px 10px black;
+
+     .company {
+          display: flex;
+          align-items: center;
+          background-color: white;
+          position: absolute;
+          min-width: 100px;
+          padding: 10px 15px;
+          color: black;
+          margin: 10px 0 0 -30px;
+          box-shadow: 0px 0px 10px black;
+
+          p {
+               font-size: 1.2rem;
+          }
+
+          .divider {
+               margin: 0 15px;
+          }
+          .date {
+               font-size: 1.1rem;
+          }
+     }
+
+     .responsibilities {
+          padding-top: 80px;
+          padding-bottom: 10px;
+          margin-left: 20px;
+
+          li {
+               list-style: disc;
+               font-size: 1.1rem;
+          }
+     }
+}

@@ -12,11 +12,10 @@
      .languages {
           padding: 10px;
           padding-left: 200px;
-          display: -webkit-box;
-          display: -ms-flexbox;
           display: flex;
           flex-direction: column;
           width: 520px;
+          z-index: 90;
 
           img {
                height: 50px;
@@ -31,15 +30,11 @@
 }
 
 .lang_row_4 {
-     display: -webkit-box;
-     display: -ms-flexbox;
      display: flex;
      margin-left: 42px;
 }
 
 .lang_row_5 {
-     display: -webkit-box;
-     display: -ms-flexbox;
      display: flex;
 }
 

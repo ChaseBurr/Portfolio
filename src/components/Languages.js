@@ -16,6 +16,81 @@ import python_logo from "./../images/languages/python-logo.png";
 import javascript_logo from "./../images/languages/JavaScript-logo.png";
 
 import styles from "./../css/Tools.module.scss";
+import { motion } from "framer-motion";
+
+const languages = {
+     top: [
+          {
+               src: webpack_logo,
+               alt: "webpack",
+               className: styles.icon_big,
+          },
+          {
+               src: CSS_logo,
+               alt: "CSS 3",
+               className: styles.icon_big,
+          },
+          {
+               src: html_logo,
+               alt: "Html 5",
+               className: styles.icon_big,
+          },
+          {
+               src: javascript_logo,
+               alt: "JavaScript",
+               className: styles.icon_big,
+          },
+     ],
+     mid: [
+          {
+               src: python_logo,
+               alt: "webpack",
+               className: styles.icon_big,
+          },
+          {
+               src: sass_logo,
+               alt: "webpack",
+               className: styles.icon_big,
+          },
+          {
+               src: cpp_logo,
+               alt: "webpack",
+               className: styles.icon_big,
+          },
+          {
+               src: cs_logo,
+               alt: "webpack",
+               className: styles.icon_big,
+          },
+          {
+               src: java_logo,
+               alt: "webpack",
+               className: styles.icon_big,
+          },
+     ],
+     bottom: [
+          {
+               src: react_logo,
+               alt: "webpack",
+               className: styles.icon_big,
+          },
+          {
+               src: node_logo,
+               alt: "webpack",
+               className: styles.icon_big,
+          },
+          {
+               src: mongo_logo,
+               alt: "webpack",
+               className: styles.icon_big,
+          },
+          {
+               src: heroku_logo,
+               alt: "webpack",
+               className: styles.icon_big,
+          },
+     ],
+};
 
 export default function Languages() {
      return (
@@ -23,75 +98,52 @@ export default function Languages() {
                {/* <h1>Languages & Tools</h1> */}
                <div className={styles.languages}>
                     <div className={styles.lang_row_4}>
-                         <img
-                              src={webpack_logo}
-                              alt="webpack"
-                              className={styles.icon_big}
-                         />
-                         <img
-                              src={CSS_logo}
-                              alt="CSS 3"
-                              className={styles.icon_big}
-                         />
-                         <img
-                              src={html_logo}
-                              alt="Html5"
-                              className={styles.icon_big}
-                         />
-                         <img
-                              src={javascript_logo}
-                              alt="JavaScript"
-                              className={styles.icon_big}
-                         />
+                         {languages.top.map((lang, i) => (
+                              <motion.div
+                                   initial={{ y: 1000, opacity: 0 }}
+                                   animate={{ y: 0, opacity: 1 }}
+                                   transition={{ duration: 0.6 + i / 3 }}
+                              >
+                                   <img
+                                        key={i}
+                                        src={lang.src}
+                                        alt={lang.alt}
+                                        className={lang.className}
+                                   />
+                              </motion.div>
+                         ))}
                     </div>
                     <div className={styles.lang_row_5}>
-                         <img
-                              src={python_logo}
-                              alt="Python"
-                              className={styles.icon_big}
-                         />
-                         <img
-                              src={sass_logo}
-                              alt="SASS"
-                              className={styles.icon_big}
-                         />
-                         <img
-                              src={cpp_logo}
-                              alt="C++"
-                              className={styles.icon_big}
-                         />
-                         <img
-                              src={cs_logo}
-                              alt="C#"
-                              className={styles.icon_big}
-                         />
-                         <img
-                              src={java_logo}
-                              alt="Java"
-                              className={styles.icon_big}
-                         />
+                         {languages.mid.map((lang, i) => (
+                              <motion.div
+                                   initial={{ y: 1000, opacity: 0 }}
+                                   animate={{ y: 0, opacity: 1 }}
+                                   transition={{ duration: 0.6 + i / 2 }}
+                              >
+                                   <img
+                                        key={i}
+                                        src={lang.src}
+                                        alt={lang.alt}
+                                        className={lang.className}
+                                   />
+                              </motion.div>
+                         ))}
                     </div>
                     <div className={styles.lang_row_4}>
-                         <img
-                              src={react_logo}
-                              alt="ReactJS"
-                              className={styles.icon_big}
-                         />
-                         <img
-                              src={node_logo}
-                              alt="NodeJS"
-                              className={styles.icon_big}
-                         />
-                         <img
-                              src={mongo_logo}
-                              alt="MongoDB"
-                              className={styles.icon_big}
-                         />
-                         <img
-                              src={heroku_logo}
-                              alt="Heroku"
-                              className={styles.icon_big}
-                         />
+                         {languages.bottom.map((lang, i) => (
+                              <motion.div
+                                   initial={{ y: 1000, opacity: 0 }}
+                                   animate={{ y: 0, opacity: 1 }}
+                                   transition={{ duration: 0.6 + i }}
+                              >
+                                   <img
+                                        key={i}
+                                        src={lang.src}
+                                        alt={lang.alt}
+                                        className={lang.className}
+                                   />
+                              </motion.div>
+                         ))}
                     </div>
                </div>
           </div>

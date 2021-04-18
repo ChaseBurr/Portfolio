@@ -1,36 +1,60 @@
 import React from "react";
 import Languages from "./Languages";
+import Section from "./Section";
 
 import styles from "./../css/About.module.scss";
-
-export default function AboutSection({ about }) {
+import { motion } from "framer-motion";
+const primaryColor = "#171715";
+const secondaryColor = "#2d3436";
+export default function AboutSection({ aboutSection, minHeight }) {
      return (
-          <div
-               className={styles.about_page}
-               id="about"
-               ref={(el) => (about = el)}
-          >
-               <div className={styles.profile}>
-                    {/* <img src="/images/avatar.jpg" alt="" /> */}
-                    <div className={styles.description}>
-                         <h3 align="center">Hi! Nice to meet you!</h3>
-                         <p align="center">
-                              I'm a front end developer specializing in React.
-                              I'm seeking full time employment or contract work.
-                              I graduated from Weber State University in August
-                              2020 and got my bachelors in Computer Science Want
-                              to hire me? Feel free to send me an email at{" "}
-                              <a href="mailto:chase@burr.dev">Chase@Burr.dev</a>{" "}
-                              or reach out to me on{" "}
-                              <a href="https://www.linkedin.com/in/chaseburr/">
-                                   LinkedIn
-                              </a>
-                              .
-                         </p>
+          <>
+               <Section
+                    header="about"
+                    backgroundColor={primaryColor}
+                    hrColor={secondaryColor}
+                    minHeight={minHeight}
+                    hr
+               >
+                    <div className={styles.about_page}>
+                         {aboutSection && (
+                              <div className={styles.profile}>
+                                   <motion.div
+                                        initial={{ opacity: 0, y: 1000 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        transition={{ duration: 0.5 }}
+                                   >
+                                        <div className={styles.description}>
+                                             <h3 align="center">
+                                                  Hi! Nice to meet you!
+                                             </h3>
+                                             <p align="center">
+                                                  I'm a front end developer
+                                                  specializing in React. I'm
+                                                  seeking full time employment
+                                                  or contract work. I graduated
+                                                  from Weber State University in
+                                                  August 2020 and got my
+                                                  bachelors in Computer Science
+                                                  Want to hire me? Feel free to
+                                                  send me an email at{" "}
+                                                  <a href="mailto:chase@burr.dev">
+                                                       Chase@Burr.dev
+                                                  </a>{" "}
+                                                  or reach out to me on{" "}
+                                                  <a href="https://www.linkedin.com/in/chaseburr/">
+                                                       LinkedIn
+                                                  </a>
+                                                  .
+                                             </p>
+                                        </div>
+                                   </motion.div>
+                                   <Languages />
+                              </div>
+                         )}
                     </div>
-                    <Languages />
-               </div>
-          </div>
+               </Section>
+          </>
      );
 }
 

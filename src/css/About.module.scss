@@ -9,15 +9,19 @@
           margin-top: 10px;
           border: 2px solid #2d3436;
      }
-}
+     .description {
+          width: 40%;
+          width: 400px;
+          margin-top: 60px;
 
-.description {
-     width: 40%;
-     margin-top: 60px;
+          p {
+               font-size: 1rem;
+               margin-top: 10px;
+          }
 
-     p {
-          font-size: 1rem;
-          margin-top: 10px;
+          h3 {
+               font-size: 1.8rem;
+          }
      }
 }
 
