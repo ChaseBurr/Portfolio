@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import "./Project.scss";
 
@@ -31,12 +31,18 @@ function Project(props) {
                                    {props.fullDescription}
                               </p>
 
-                              <h6>
+                              <hr />
+                              <h4>Languages / Frameworks</h4>
+                              <p style={{ marginBottom: "10px" }}>
+                                   {props.language}
+                              </p>
+
+                              <h5>
                                    View the website live{" "}
                                    <a href={props.link} target="_blank">
                                         here
                                    </a>
-                              </h6>
+                              </h5>
                          </div>
                     </div>
                </motion.div>
